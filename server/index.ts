@@ -4,9 +4,9 @@ import cors from 'cors';
 import express from 'express';
 
 import mongoose from 'mongoose';
-import campaignRouter  from './routes/campaign.js';
-import  messageRouter from './routes/message.js';
-import leadRouter from "./routes/leads.js"
+import campaignRouter  from './routes/campaign';
+import  messageRouter from './routes/message';
+import leadRouter from "./routes/leads"
 const app = express();
 const PORT = process.env.PORT || 8000;
 

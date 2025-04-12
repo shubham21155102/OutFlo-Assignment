@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import fs from "fs"
 import mongoose from 'mongoose';
-import Lead from "./models/Leads.ts"
+import Lead from "./models/Leads"
 // import data from "./linkedin_results.json"
 
 const connectDB = async () => {
