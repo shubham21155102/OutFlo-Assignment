@@ -1,5 +1,5 @@
 import express from 'express';
-import Leads from '../models/Leads.ts';
+import Leads from '../models/Leads';
 
 const leadRouter = express.Router();
 const createResponse = (data: any, message: string, success: boolean, statusCode: number) => {
