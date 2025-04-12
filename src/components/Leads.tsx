@@ -23,7 +23,7 @@ const LeadList: React.FC<LeadListProps> = ({ onAddToCampaign }) => {
   useEffect(() => {
     const fetchLeads = async () => {
       try {
-        const response = await fetch('https://outflo-assignment-u7x4.onrender.com/api/leads');
+        const response = await fetch('https://outflo-assignment-o03p.onrender.com/api/leads');
         if (!response.ok) {
           throw new Error('Failed to load leads');
         }

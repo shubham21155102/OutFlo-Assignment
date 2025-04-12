@@ -22,7 +22,7 @@ const MessageGenerator: React.FC = () => {
   const [generatedMessage, setGeneratedMessage] = useState<string>('');
 
   const handleGenerateMessage =async () => {
-    const res = await fetch("https://outflo-assignment-u7x4.onrender.com/api/personalized-message", {
+    const res = await fetch("https://outflo-assignment-o03p.onrender.com/api/personalized-message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

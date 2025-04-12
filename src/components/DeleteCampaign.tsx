@@ -18,7 +18,7 @@ const DeleteCampaign: React.FC<DeleteCampaignProps> = ({ campaign, onClose, onDe
     setError(null);
     
     try {
-      const response = await fetch(`https://outflo-assignment-u7x4.onrender.com/api/campaigns/${campaign._id}`, {
+      const response = await fetch(`https://outflo-assignment-o03p.onrender.com/api/campaigns/${campaign._id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
