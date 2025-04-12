@@ -6,6 +6,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import campaignRouter  from './routes/campaign.js';
 import  messageRouter from './routes/message.js';
+import leadRouter from "./routes/leads.js"
 const app = express();
 const PORT = process.env.PORT || 8000;
 
@@ -23,6 +24,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/outflo')
 // Routes
 app.use('/api/campaigns', campaignRouter);
 app.use('/api/personalized-message', messageRouter);
+app.use('/api/leads', leadRouter);
 app.get('/health',(req,res)=>{
   res.json({
     message:"Running"

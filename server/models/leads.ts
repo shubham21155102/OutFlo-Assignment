@@ -1,17 +1,22 @@
 import mongoose from 'mongoose';
-
+// newLead.name=fullName;
+//     newLead.currentCompany=currentCompany;
+//     newLead.currentPosition=currentPosition;
+//     newLead.location=location
+//     newLead.profileUrl=profileLink
+//     newLead.description=description;
 const leadSchema = new mongoose.Schema({
-  fullName: {
+  name: {
     type: String,
     required: true
   },
-  jobTitle: {
+  currentCompany: {
     type: String,
-    required: true
+    // required: true
   },
-  company: {
+  currentPosition: {
     type: String,
-    required: true
+    // required: true
   },
   location: {
     type: String
@@ -21,14 +26,14 @@ const leadSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  searchQuery: {
+  description: {
     type: String,
-    required: true
+    // required: true
   },
-  scrapedAt: {
-    type: Date,
-    default: Date.now
-  }
+  // scrapedAt: {
+  //   type: Date,
+  //   default: Date.now
+  // }
 });
 
 const Lead = mongoose.model('Lead', leadSchema);
