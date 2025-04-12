@@ -66,7 +66,7 @@ const CreateCampaign: React.FC<CreateCampaignProps> = ({ onClose, onCreate }) =>
         accountIDs: formData.accountIDs.filter(account => account.trim() !== '')
       };
 
-      const response = await fetch('http://localhost:8000/api/campaigns', {
+      const response = await fetch('https://outflo-assignment-u7x4.onrender.com/api/campaigns', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

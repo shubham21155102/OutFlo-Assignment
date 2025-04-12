@@ -37,7 +37,7 @@ const EditCampaign: React.FC<EditCampaignProps> = ({ campaign, onClose, onSave }
     setError(null);
 
     try {
-      const response = await fetch(`http://localhost:8000/api/campaigns/${formData._id}`, {
+      const response = await fetch(`https://outflo-assignment-u7x4.onrender.com/api/campaigns/${formData._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

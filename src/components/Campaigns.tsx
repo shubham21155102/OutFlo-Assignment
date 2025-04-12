@@ -23,7 +23,7 @@ const Campaigns: React.FC = () => {
   const fetchCampaigns = async () => {
     try {
       setIsLoading(true);
-      const res = await fetch("http://localhost:8000/api/campaigns");
+      const res = await fetch("https://outflo-assignment-u7x4.onrender.com/api/campaigns");
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
       }
@@ -48,7 +48,7 @@ const Campaigns: React.FC = () => {
           ? { ...campaign, status: campaign.status === 'ACTIVE' ? 'INACTIVE' : 'ACTIVE' }
           : campaign
       ));
-      const response = await fetch(`http://localhost:8000/api/campaigns/${campaignId}`, {
+      const response = await fetch(`https://outflo-assignment-u7x4.onrender.com/api/campaigns/${campaignId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
